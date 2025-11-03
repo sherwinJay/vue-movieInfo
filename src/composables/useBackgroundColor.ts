@@ -1,5 +1,5 @@
 import ColorThief from "colorthief";
-import { movieDbImgURL, movieDbKey } from "@/constants/constants";
+import { movieDbImgURL } from "@/constants/constants";
 import type { Ref } from "vue";
 
 // export const useBgColor = (posterImg: HTMLImageElement) => {
@@ -22,7 +22,7 @@ export function useBackgroundAnalyze(
   const image = poster.value;
 
   // console.log(poster.value);
-  if (!image.complete) return;
+  if (!image) return;
 
   const colorThief = new ColorThief();
   const palette = colorThief.getColor(image);
@@ -46,17 +46,18 @@ export function use_wc_hex_is_light(color: string) {
   return brightness > 170;
 }
 
-export function useHexToRGB(hex: any, alpha: number) {
-  const r = parseInt(hex.toString().slice(1, 3), 16);
-  const g = parseInt(hex.toString().slice(3, 5), 16);
-  const b = parseInt(hex.toString().slice(5, 7), 16);
+// export function useHexToRGB(hex: any, alpha: number) {
+//   console.log("hex test: ", hex);
+//   const r = parseInt(hex.toString().slice(1, 3), 16);
+//   const g = parseInt(hex.toString().slice(3, 5), 16);
+//   const b = parseInt(hex.toString().slice(5, 7), 16);
 
-  if (alpha) {
-    return `rgba(${r},${g} ,${b},${alpha})`;
-  } else {
-    return `rgba(${r},${g} ,${b})`;
-  }
-}
+//   if (alpha) {
+//     return `rgba(${r},${g} ,${b},${alpha})`;
+//   } else {
+//     return `rgba(${r},${g} ,${b})`;
+//   }
+// }
 
 export function useBannerBgGradient(r: number, g: number, b: number, alpha: number) {
   if (alpha) {

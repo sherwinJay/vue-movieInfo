@@ -41,8 +41,8 @@ const baseStyle = computed(() => ({
     hoveredPath.value !== null ? `url(${movieDbImgURL}/t/p/w1280${hoveredPath.value})` : undefined,
 }));
 
-console.log(hoveredPath.value);
-console.log("trailer: ", slicedTrendingTrailer.value);
+// console.log(hoveredPath.value);
+// console.log("trailer: ", slicedTrendingTrailer.value);
 </script>
 
 <template>

@@ -29,7 +29,7 @@ const movieImage = `${movieDbImgURL}/t/p/w780/${props.backdropPath}`;
 // );
 
 // console.log(trendingTrailer);
-console.log(props.backdropPath);
+// console.log(props.backdropPath);
 </script>
 
 <template>

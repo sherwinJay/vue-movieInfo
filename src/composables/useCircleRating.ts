@@ -1,5 +1,5 @@
 const useCircleRating = (rating: number) => {
-  const counter = 0;
+  // const counter = 0;
   const computeRating = () => {
     // modify rating by 360 degree
     // parse to the nearest whole number

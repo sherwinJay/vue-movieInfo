@@ -66,7 +66,7 @@ export const fetchMovieData = async ({
     );
 
     const data = response.data as MovieDataType;
-    console.log(data);
+    // console.log(data);
     return data;
   } catch (error) {
     console.log(error);
@@ -191,7 +191,7 @@ export const fetchTrending = async () => {
 
     const trendingList = await response.data;
 
-    console.log("trending list: ", trendingList);
+    // console.log("trending list: ", trendingList);
 
     return trendingList;
   } catch (error) {
@@ -218,7 +218,7 @@ export const fetchTrendingTrailers = async ({ pageId, mediaType, signal }: Recom
     // console.log("trailers: ", response.data);
 
     // const trendingTrailers = await response.json()
-    console.log(response.data);
+    // console.log(response.data);
     return response.data;
   } catch (error) {
     console.log("trending trailers error", error);

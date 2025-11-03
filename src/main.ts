@@ -39,5 +39,5 @@ app.use(head);
 
 // app.use(UnpicImage);
 // app.component("v-icon", OhVueIcon);
-await router.isReady();
+// await router.isReady();
 app.mount("#app");

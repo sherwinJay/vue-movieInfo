@@ -13,7 +13,6 @@ dist
 dist-ssr
 coverage
 *.local
-.env*
 
 /cypress/videos/
 /cypress/screenshots/
@@ -29,3 +28,9 @@ coverage
 *.sw?
 
 *.tsbuildinfo
+
+# local env files
+.env.local
+.env.*.local
+/.env
+/.env.*.local
